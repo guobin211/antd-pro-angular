@@ -184,7 +184,9 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "https://guobin211.github.io/antd-pro-angular/"
+          }
         }
       }
     }

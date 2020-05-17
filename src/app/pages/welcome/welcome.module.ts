@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 
 import { WelcomeRoutingModule } from './welcome-routing.module';
 
-import { WelcomeComponent } from './welcome.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   imports: [WelcomeRoutingModule],
-  declarations: [WelcomeComponent],
-  exports: [WelcomeComponent]
+  declarations: [AboutComponent],
+  exports: []
 })
 export class WelcomeModule { }
