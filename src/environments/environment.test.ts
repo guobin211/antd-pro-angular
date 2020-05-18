@@ -1,6 +1,5 @@
 export const environment = {
-  production: false,
-  platform: 'local',
+  production: true,
+  platform: 'test',
   baseUrl: '',
 };
-
