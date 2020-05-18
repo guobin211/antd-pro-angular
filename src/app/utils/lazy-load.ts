@@ -1,11 +1,11 @@
-import { Dom } from './dom';
+import { createTagElement } from './dom';
 
 export function lazyLoad(path: string) {
   return new Promise((resolve, reject) => {
     if (alreadyLoadScript(path)) {
       resolve(true);
     } else {
-      const script: HTMLScriptElement = Dom.createTagElement('script', {type: 'text/javascript'});
+      const script: HTMLScriptElement = createTagElement('script', {type: 'text/javascript'});
       script.src = path;
       script.onerror = () => {
         reject(false);

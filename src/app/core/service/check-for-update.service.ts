@@ -5,9 +5,7 @@ import { first } from 'rxjs/operators';
 /**
  * 检查更新
  */
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CheckForUpdateService {
 
   constructor(appRef: ApplicationRef, updates: SwUpdate) {

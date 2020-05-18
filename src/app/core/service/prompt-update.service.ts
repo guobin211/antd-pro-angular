@@ -6,9 +6,7 @@ const promptUser = (e: any) => e.toString().length > 50;
 /**
  * 强制更新
  */
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class PromptUpdateService {
 
   constructor(private updates: SwUpdate) { }

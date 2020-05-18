@@ -1,4 +1,4 @@
-function createTagElement<T extends HTMLElement>(tag: string, attr?: {}) {
+export function createTagElement<T extends HTMLElement>(tag: string, attr?: {}) {
   const el = document.createElement(tag);
   for (const attrKey in attr) {
     if (attr.hasOwnProperty(attrKey)) {
@@ -11,7 +11,3 @@ function createTagElement<T extends HTMLElement>(tag: string, attr?: {}) {
   }
   return el as T;
 }
-
-export const Dom = {
-  createTagElement,
-};
