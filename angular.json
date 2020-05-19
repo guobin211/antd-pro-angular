@@ -40,8 +40,7 @@
               "src/theme.less",
               "src/styles.scss"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -217,6 +216,46 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "https://guobin211.github.io/antd-pro-angular/"
+          }
+        }
+      }
+    },
+    "ngx-image": {
+      "projectType": "library",
+      "root": "projects/ngx-image",
+      "sourceRoot": "projects/ngx-image/src",
+      "prefix": "",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-image/tsconfig.lib.json",
+            "project": "projects/ngx-image/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-image/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-image/src/test.ts",
+            "tsConfig": "projects/ngx-image/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-image/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-image/tsconfig.lib.json",
+              "projects/ngx-image/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }

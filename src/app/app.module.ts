@@ -12,25 +12,25 @@ import zh from '@angular/common/locales/zh';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { CoreModule } from './core/core.module';
-
+import { NgxImageModule } from 'projects/ngx-image/src/public-api';
 
 registerLocaleData(zh);
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
-    BrowserModule.withServerTransition({appId: 'serverApp'}),
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     CoreModule,
     HttpClientModule,
+    NgxImageModule,
     ServiceWorkerModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
