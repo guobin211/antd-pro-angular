@@ -1,11 +1,11 @@
-import { randomId } from '../utils/';
+import { getRandomId } from '../utils/';
 
 export class BaseModel {
   id: string;
   createTime: number;
   constructor() {
     this.createTime = new Date().getTime();
-    this.id = randomId();
+    this.id = getRandomId();
   }
 
   mapperSet(props: string[], value: any) {

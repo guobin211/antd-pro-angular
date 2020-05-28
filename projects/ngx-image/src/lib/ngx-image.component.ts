@@ -3,25 +3,12 @@ import {
   OnInit,
   Input,
 } from '@angular/core';
-import { LoadState } from './state';
+
+export type LoadState = 'loading' | 'success' | 'error';
 
 @Component({
   selector: 'ngx-image',
-  template: `
-    <div class="ngx-div">
-      <img
-        class="ngx-img"
-        [src]="src"
-        [alt]="alt ? alt : ''"
-        (error)="loadError($event)"
-        (load)="load($event)"
-      />
-      <div class="ngx-load" *ngIf="loadState !== 'success'">
-        <span *ngIf="loadState === 'loading'">加载中...</span>
-        <span *ngIf="loadState === 'error'">加载失败</span>
-      </div>
-    </div>
-  `,
+  templateUrl: './ngx-image.html',
   styleUrls: ['./style.css'],
 })
 export class NgxImageComponent implements OnInit {

@@ -1,5 +1,9 @@
 import { createTagElement } from './dom';
 
+/**
+ * lazy 加载script
+ * @param path url地址
+ */
 export function lazyLoad(path: string) {
   return new Promise((resolve, reject) => {
     if (alreadyLoadScript(path)) {

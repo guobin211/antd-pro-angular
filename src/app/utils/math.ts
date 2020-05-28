@@ -1,5 +1,8 @@
-export function randomId() {
-  const s = [];
+/**
+ * 随机id生成
+ */
+export function getRandomId() {
+  const s: any = [];
   const hexDigits = '0123456789abcdef';
   for ( let i = 0; i < 36; i++) {
     s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
