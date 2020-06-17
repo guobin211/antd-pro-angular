@@ -156,6 +156,8 @@ Read more about MIT at [TLDRLegal](https://tldrlegal.com/license/mit-license).
 ng-zorro-antd
 MIT
 
+ngx-image
+
 regenerator-runtime
 MIT
 MIT License
