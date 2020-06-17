@@ -1,0 +1,17 @@
+<div class="ngx-div">
+  <picture>
+    <source *ngIf="isWebp" type="image/webp" [srcset]="src">
+    <img
+      class="ngx-img"
+      *ngIf="!isWebp"
+      [src]="src"
+      [alt]="alt ? alt : ''"
+      (error)="loadError($event)"
+      (load)="load($event)"
+    />
+  </picture>
+  <div class="ngx-load" *ngIf="loadState !== 'success'">
+    <span *ngIf="loadState === 'loading'">加载中...</span>
+    <span *ngIf="loadState === 'error'">加载失败</span>
+  </div>
+</div>
