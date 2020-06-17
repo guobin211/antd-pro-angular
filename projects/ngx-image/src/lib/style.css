@@ -5,9 +5,18 @@
   height: 100%;
   overflow: hidden;
 }
+.ngx-div picture{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .ngx-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   vertical-align: top;
-  object-fit: fill;
+  object-fit: cover;
+  -webkit-user-drag: none;
 }
 .ngx-load {
   position: absolute;
