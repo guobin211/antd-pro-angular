@@ -4,6 +4,7 @@ import { BasicDetailComponent } from './basic-detail/basic-detail.component';
 
 
 const routes: Routes = [
+  {path: '', redirectTo: 'basic-detail'},
   { path: 'basic-detail', component: BasicDetailComponent }
 ];
 
