@@ -1,10 +1,10 @@
 <h1 align="center">Ant Design Pro For Angular</h1>
 
-- Preview: [https://guobin211.github.io/antd-pro-angular/dashboard][Preview]
-- Home Page: [https://github.com/guobin211/antd-pro-angular][Home Page]
+- Preview: [https://guobin211.github.io/antd-pro-angular/dashboard]
+- Home Page: [https://github.com/guobin211/antd-pro-angular]
 - Documentation: 
 - ChangeLog: 
-- FAQ: [https://github.com/guobin211/antd-pro-angular/issues][FAQ]
+- FAQ: [https://github.com/guobin211/antd-pro-angular/issues]
 
 ## 文档规划
 
