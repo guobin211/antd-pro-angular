@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { BasicFormComponent } from './basic-form/basic-form.component';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { BasicFormComponent } from "./basic-form/basic-form.component";
 
 
 const routes: Routes = [
-  { path: 'basic-form', component: BasicFormComponent },
+  { path: "", redirectTo: "basic-form", pathMatch: "full" },
+  { path: "basic-form", component: BasicFormComponent },
 ];
 
 @NgModule({

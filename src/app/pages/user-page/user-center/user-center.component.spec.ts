@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { UserCenterComponent } from './user-center.component';
+import { UserCenterComponent } from "./user-center.component";
 
-describe('UserCenterComponent', () => {
+describe("UserCenterComponent", () => {
   let component: UserCenterComponent;
   let fixture: ComponentFixture<UserCenterComponent>;
 
@@ -19,7 +19,7 @@ describe('UserCenterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

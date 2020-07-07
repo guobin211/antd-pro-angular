@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { BasicListComponent } from './basic-list.component';
+import { BasicListComponent } from "./basic-list.component";
 
-describe('BasicListComponent', () => {
+describe("BasicListComponent", () => {
   let component: BasicListComponent;
   let fixture: ComponentFixture<BasicListComponent>;
 
@@ -19,7 +19,7 @@ describe('BasicListComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

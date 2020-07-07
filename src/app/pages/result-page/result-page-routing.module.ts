@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { SuccessComponent } from './success/success.component';
-import { FailComponent } from './fail/fail.component';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { SuccessComponent } from "./success/success.component";
+import { FailComponent } from "./fail/fail.component";
 
 
 const routes: Routes = [
-  { path: 'success', component: SuccessComponent },
-  { path: 'fail', component: FailComponent }
+  { path: "success", component: SuccessComponent },
+  { path: "fail", component: FailComponent }
 ];
 
 @NgModule({

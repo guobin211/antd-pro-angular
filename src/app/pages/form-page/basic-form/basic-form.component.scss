@@ -1,0 +1,12 @@
+.basic-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 300px;
+  label {
+    display: block;
+    width: 300px;
+    height: 56px;
+  }
+}

@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { BasicFormComponent } from './basic-form.component';
+import { BasicFormComponent } from "./basic-form.component";
 
-describe('BasicFormComponent', () => {
+describe("BasicFormComponent", () => {
   let component: BasicFormComponent;
   let fixture: ComponentFixture<BasicFormComponent>;
 
@@ -19,7 +19,7 @@ describe('BasicFormComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

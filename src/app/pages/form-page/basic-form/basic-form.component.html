@@ -1,1 +1,21 @@
-<p>basic-form works!</p>
+<div class="form-page">
+  <h1>Basic Form</h1>
+  <form [formGroup]="form" class="basic-form" (submit)="onSubmit()">
+    <label for="name">
+      Name:
+      <input type="text" id="name" placeholder="input name" formControlName="name">
+    </label>
+    <div [hidden]="form.get('name').valid || form.get('name').untouched">
+      <p [hidden]="!form.hasError('required','name')">用户名必填的</p>
+    </div>
+    <label for="password">
+      Password:
+      <input type="text" id="password" placeholder="input password" formControlName="password">
+    </label>
+    <div [hidden]="form.get('password').valid || form.get('password').untouched">
+      <p [hidden]="!form.hasError('required','password')">密码必填</p>
+      <p [hidden]="!form.hasError('minlength','password')">密码不少于6位</p>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>

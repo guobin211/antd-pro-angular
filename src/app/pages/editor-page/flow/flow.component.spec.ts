@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { FlowComponent } from './flow.component';
+import { FlowComponent } from "./flow.component";
 
-describe('FlowComponent', () => {
+describe("FlowComponent", () => {
   let component: FlowComponent;
   let fixture: ComponentFixture<FlowComponent>;
 
@@ -19,7 +19,7 @@ describe('FlowComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

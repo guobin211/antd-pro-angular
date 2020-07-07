@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  templateUrl: './success.component.html',
-  styleUrls: ['./success.component.scss']
+  templateUrl: "./success.component.html",
+  styleUrls: ["./success.component.scss"]
 })
 export class SuccessComponent implements OnInit {
 

@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
-import { DetailPageRoutingModule } from './detail-page-routing.module';
-import { BasicDetailComponent } from './basic-detail/basic-detail.component';
+import { DetailPageRoutingModule } from "./detail-page-routing.module";
+import { BasicDetailComponent } from "./basic-detail/basic-detail.component";
 
 
 @NgModule({

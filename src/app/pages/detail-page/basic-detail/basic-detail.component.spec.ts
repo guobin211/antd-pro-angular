@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { BasicDetailComponent } from './basic-detail.component';
+import { BasicDetailComponent } from "./basic-detail.component";
 
-describe('BasicDetailComponent', () => {
+describe("BasicDetailComponent", () => {
   let component: BasicDetailComponent;
   let fixture: ComponentFixture<BasicDetailComponent>;
 
@@ -19,7 +19,7 @@ describe('BasicDetailComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

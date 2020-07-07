@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  templateUrl: './user-center.component.html',
-  styleUrls: ['./user-center.component.scss']
+  templateUrl: "./user-center.component.html",
+  styleUrls: ["./user-center.component.scss"]
 })
 export class UserCenterComponent implements OnInit {
 

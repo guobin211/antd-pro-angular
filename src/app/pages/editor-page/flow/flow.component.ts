@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  templateUrl: './flow.component.html',
-  styleUrls: ['./flow.component.scss']
+  templateUrl: "./flow.component.html",
+  styleUrls: ["./flow.component.scss"]
 })
 export class FlowComponent implements OnInit {
 
