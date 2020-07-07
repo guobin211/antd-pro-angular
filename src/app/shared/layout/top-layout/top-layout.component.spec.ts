@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { TopLayoutComponent } from './top-layout.component';
+import { TopLayoutComponent } from "./top-layout.component";
 
-describe('TopLayoutComponent', () => {
+describe("TopLayoutComponent", () => {
   let component: TopLayoutComponent;
   let fixture: ComponentFixture<TopLayoutComponent>;
 
@@ -19,7 +19,7 @@ describe('TopLayoutComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

@@ -7,70 +7,14 @@
             [nzTrigger]="null">
     <div class="sidebar-logo">
       <a href="https://ng.ant.design/" target="_blank">
-        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
         <h1>Ant Design Of Angular</h1>
       </a>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+      <li nz-submenu nzOpen [nzTitle]="group.title" [nzIcon]="group.icon" *ngFor="let group of sideNavList">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/analysis">analysis</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Monitor</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Workplace</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="详情页" nzIcon="book">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/detail/">文章详情</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="编辑页" nzIcon="edit">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/editor">编辑器</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="错误页" nzIcon="exception">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/error">访问错误</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="表单页" nzIcon="form">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/form">表单页</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="列表页" nzIcon="database">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/list">访问错误</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="结果页" nzIcon="wallet">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/result">成功页</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="用户中心" nzIcon="user">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/user">用户中心</a>
+          <li nz-menu-item nzMatchRouter *ngFor="let child of group.child">
+            <a [routerLink]="child.path">{{child.title}}</a>
           </li>
         </ul>
       </li>

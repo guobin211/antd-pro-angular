@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SideLayoutComponent } from './side-layout.component';
+import { SideLayoutComponent } from "./side-layout.component";
 
-describe('SideLayoutComponent', () => {
+describe("SideLayoutComponent", () => {
   let component: SideLayoutComponent;
   let fixture: ComponentFixture<SideLayoutComponent>;
 
@@ -19,7 +19,7 @@ describe('SideLayoutComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
