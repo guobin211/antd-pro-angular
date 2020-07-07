@@ -1,18 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.scss']
+  selector: "app-admin",
+  templateUrl: "./admin.component.html",
+  styleUrls: ["./admin.component.scss"]
 })
 export class AdminComponent implements OnInit {
 
-  private layoutState = 'side';
+  private layoutState = "side";
   get topLayout() {
-    return this.layoutState === 'top';
+    return this.layoutState === "top";
   }
   get sideLayout() {
-    return this.layoutState === 'side';
+    return this.layoutState === "side";
   }
   constructor() { }
 
