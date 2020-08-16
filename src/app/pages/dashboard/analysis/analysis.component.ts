@@ -5,10 +5,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./analysis.component.scss"]
 })
 export class AnalysisComponent implements OnInit {
-
-  constructor() { }
+  data = "AnalysisComponent"
+  constructor() {}
 
   ngOnInit(): void {
   }
-
 }
