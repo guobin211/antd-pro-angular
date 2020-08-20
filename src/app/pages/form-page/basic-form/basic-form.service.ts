@@ -34,7 +34,8 @@ export class BasicFormService {
 
   postForm(value: BasicFormModel) {
     // fetch api
-    console.info("postForm:", value);
-    this.initialValue = new BasicFormModel();
+    fetch("https://localhost/api/form", {body: JSON.stringify(value)}).then().finally(() => {
+      this.initialValue = new BasicFormModel();
+    });
   }
 }

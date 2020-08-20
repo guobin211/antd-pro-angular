@@ -34,8 +34,10 @@ export class BasicFormComponent implements OnInit, OnDestroy {
     } else {
       // 校验不通过
       for (const key in this.form.controls) {
-        this.form.controls[key].markAsTouched();
-        this.form.controls[key].updateValueAndValidity();
+        if (this.form.controls.hasOwnProperty(key)) {
+          this.form.controls[key].markAsTouched();
+          this.form.controls[key].updateValueAndValidity();
+        }
       }
     }
   }

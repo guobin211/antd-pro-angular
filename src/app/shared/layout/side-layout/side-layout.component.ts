@@ -4,7 +4,7 @@ interface NavItem {
   title: string;
   path: string;
   icon?: string;
-  child?: NavItem[]
+  child?: NavItem[];
 }
 
 const NavData: NavItem[] = [
@@ -31,14 +31,14 @@ export class SideLayoutComponent implements OnInit {
   ngOnInit(): void {
     const res = [];
     NavData.forEach(el => {
-      const group = {title: el.title, icon: el.icon, path: el.path, child: []}
+      const group = {title: el.title, icon: el.icon, path: el.path, child: []};
       el.child?.forEach(item => {
         group.child.push(
           {
             title: item.title,
             path: `/${el.path}/${item.path}`
           }
-        )
+        );
       });
       res.push(group);
     });

@@ -1,4 +1,4 @@
-import { createTagElement } from './dom';
+import { createTagElement } from "./dom";
 
 /**
  * lazy 加载script
@@ -9,7 +9,7 @@ export function lazyLoad(path: string) {
     if (alreadyLoadScript(path)) {
       resolve(true);
     } else {
-      const script: HTMLScriptElement = createTagElement('script', {type: 'text/javascript'});
+      const script: HTMLScriptElement = createTagElement("script", {type: "text/javascript"});
       script.src = path;
       script.onerror = () => {
         reject(false);
@@ -17,6 +17,7 @@ export function lazyLoad(path: string) {
       script.onload = () => {
         resolve(true);
       };
+      script.crossOrigin = "Anonymous";
       document.appendChild(script);
     }
   });
